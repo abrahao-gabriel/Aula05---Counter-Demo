@@ -9,9 +9,19 @@ export class CounterComponent implements OnInit {
 
 @Input() name:string
 
+private counter:number = 0 ;
+
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {  }
+
+  getCounter(){
+    return this.counter
+  }
+
+  increment(){
+    return this.counter++
   }
 
 }
